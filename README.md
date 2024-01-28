@@ -1,2 +1,2 @@
 # social
-Reunião das redes sociais
+Reunião das minhas redes sociais.
