@@ -2,12 +2,8 @@ body {
     margin: 0;
     padding: 0;
     overflow: hidden; /* Impede o scroll */
-    display: flex;
-    justify-content: center;
-    align-items: center;
     height: 100vh;
     background: black;
-    color: white;
     position: relative;
 }
 
@@ -19,26 +15,29 @@ canvas {
 }
 
 .container {
-    position: relative;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Centraliza */
     z-index: 2; /* Sobrepõe o canvas */
-    background: rgba(0, 0, 0, 0.7); /* Fundo semitransparente */
     padding: 20px;
+    background: #ffffff; /* Mantém o fundo original */
     border-radius: 10px;
-    box-shadow: 0 0 20px rgba(0, 255, 0, 0.5); /* Efeito de brilho */
-    text-align: center;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3); /* Suave sombra */
 }
 
 .cards .imgBx img {
-    border-radius: 50%;
-    width: 100px; /* Ajuste conforme necessário */
-    height: 100px;
-    object-fit: cover;
+    width: 100%; /* Mantém responsividade */
+    border-radius: 10px;
+}
+
+.cards .content {
+    text-align: center;
 }
 
 .cards h2 {
-    color: #0f0; /* Verde Matrix */
-    font-size: 1.5em;
-    margin: 10px 0;
+    font-size: 1.8em;
+    color: #333; /* Texto original */
 }
 
 .social_icons {
@@ -47,16 +46,17 @@ canvas {
     display: flex;
     justify-content: center;
     gap: 15px;
+    margin-top: 10px;
 }
 
 .social_icons li a {
-    color: #0f0;
+    color: #333; /* Cor original */
     font-size: 1.5em;
     text-decoration: none;
     transition: transform 0.2s, color 0.2s;
 }
 
 .social_icons li a:hover {
-    color: white;
+    color: #0f0; /* Destaque ao passar o mouse */
     transform: scale(1.2);
 }
