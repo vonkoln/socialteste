@@ -1,3 +1,4 @@
+document.addEventListener("DOMContentLoaded", () => {
 // Seleciona o canvas e define o contexto
 const canvas = document.getElementById('canvas');
 const ctx = canvas.getContext('2d');
@@ -37,4 +38,5 @@ function draw() {
 }
 
 // Atualiza o canvas a cada 33ms
-setInterval(draw, 33);
+setInterval(draw, 33)
+};
