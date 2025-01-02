@@ -21,9 +21,9 @@ canvas {
     transform: translate(-50%, -50%); /* Centraliza */
     z-index: 2; /* Sobrepõe o canvas */
     width: 300px; /* Tamanho proporcional */
-    background: #ffffff; /* Fundo do card */
+    background: #00ff0080; /* Fundo do card */
     border-radius: 10px;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.85); /* Sombra suave */
+    box-shadow: 0 5px 15px rgba(0, 255, 0, 0.36); /* Sombra suave */
     overflow: hidden;
 }
 
@@ -51,7 +51,7 @@ canvas {
 .cards h2 {
     margin: 15px 0 10px;
     font-size: 1.5em;
-    color: #333;
+    color: #000;
 }
 
 .cards .social_icons {
@@ -72,7 +72,7 @@ canvas {
 }
 
 .social_icons li a {
-    color: #333; /* Cor original */
+    color: #000; /* Cor original */
     font-size: 1.5em;
     text-decoration: none;
     transition: transform 0.3s, color 0.3s;
