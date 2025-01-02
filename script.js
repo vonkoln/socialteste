@@ -39,4 +39,4 @@ function draw() {
 
 // Atualiza o canvas a cada 33ms
 setInterval(draw, 33)
-};
+});
